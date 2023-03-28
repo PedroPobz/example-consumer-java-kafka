@@ -55,7 +55,9 @@ can_i_deploy: .env
 	  --version ${GIT_COMMIT} \
 	  --to-environment production \
 	  --retry-while-unknown 0 \
-	  --retry-interval 10
+	  --retry-interval 10 \
+	  --broker-base-url https://pobz.pactflow.io \
+	  --broker-token x8Mdc9I12r8wmypuAesgAw
 
 deploy_app:
 	@echo "Deploying to prod"
