@@ -2,7 +2,7 @@
 # It's set as a secure environment variable in the build.yml file
 PACTICIPANT := "pactflow-example-consumer-java-kafka"
 GITHUB_WEBHOOK_UUID := "654aff47-0269-4b9f-aaca-2f83ff3cd772"
-PACT_CLI="docker run --rm -v ${PWD}:${PWD} -e PACT_BROKER_BASE_URL -e PACT_BROKER_TOKEN pactfoundation/pact-cli:latest"
+PACT_CLI="docker run --rm -v ${PWD}:${PWD} -e https://pobz.pactflow.io -e x8Mdc9I12r8wmypuAesgAw pactfoundation/pact-cli:latest"
 
 # Only deploy from master
 ifeq ($(GIT_BRANCH),master)
