@@ -30,7 +30,7 @@ fake_ci: .env
 
 
 publish_pacts: .env
-	@"${PACT_CLI}" publish ${PWD}/build/pacts --consumer-app-version ${GIT_COMMIT} --tag ${GIT_BRANCH} --broker-base-url https://pobz.pactflow.io
+	@"${PACT_CLI}" publish ${PWD}/build/pacts --consumer-app-version ${GIT_COMMIT} --tag ${GIT_BRANCH} --broker-base-url https://pobz.pactflow.io --broker-token x8Mdc9I12r8wmypuAesgAw
 
 ## =====================
 ## Build/test tasks
